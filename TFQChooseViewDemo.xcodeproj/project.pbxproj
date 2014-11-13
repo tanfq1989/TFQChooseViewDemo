@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8414FE661A0C614700398192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414FE651A0C614700398192 /* AppDelegate.swift */; };
+		8414FE681A0C614700398192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414FE671A0C614700398192 /* ViewController.swift */; };
+		8414FE6B1A0C614700398192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414FE691A0C614700398192 /* Main.storyboard */; };
+		8414FE6D1A0C614700398192 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8414FE6C1A0C614700398192 /* Images.xcassets */; };
+		8414FE701A0C614700398192 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8414FE6E1A0C614700398192 /* LaunchScreen.xib */; };
+		8414FE7C1A0C614700398192 /* TFQChooseViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414FE7B1A0C614700398192 /* TFQChooseViewDemoTests.swift */; };
+		844B62261A135A5B0055633B /* ChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B62171A135A5B0055633B /* ChooseView.m */; };
+		844B62271A135A5B0055633B /* ChooseViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B62191A135A5B0055633B /* ChooseViewGroup.m */; };
+		844B62281A135A5B0055633B /* ChooseViewStyleClearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B621A1A135A5B0055633B /* ChooseViewStyleClearDown.swift */; };
+		844B62291A135A5B0055633B /* ChooseViewStylePulldown.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B621C1A135A5B0055633B /* ChooseViewStylePulldown.m */; };
+		844B622A1A135A5B0055633B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844B621D1A135A5B0055633B /* Images.xcassets */; };
+		844B622B1A135A5B0055633B /* LocationChooseViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B62201A135A5B0055633B /* LocationChooseViewGroup.m */; };
+		844B622C1A135A5B0055633B /* locations in Resources */ = {isa = PBXBuildFile; fileRef = 844B62211A135A5B0055633B /* locations */; };
+		844B622D1A135A5B0055633B /* SubjectChooseViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B62241A135A5B0055633B /* SubjectChooseViewGroup.m */; };
+		844B622E1A135A5B0055633B /* subjects in Resources */ = {isa = PBXBuildFile; fileRef = 844B62251A135A5B0055633B /* subjects */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8414FE761A0C614700398192 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8414FE581A0C614700398192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8414FE5F1A0C614700398192;
+			remoteInfo = TFQChooseViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8414FE601A0C614700398192 /* TFQChooseViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFQChooseViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8414FE641A0C614700398192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8414FE651A0C614700398192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8414FE671A0C614700398192 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8414FE6A1A0C614700398192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8414FE6C1A0C614700398192 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8414FE6F1A0C614700398192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8414FE751A0C614700398192 /* TFQChooseViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFQChooseViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8414FE7A1A0C614700398192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8414FE7B1A0C614700398192 /* TFQChooseViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFQChooseViewDemoTests.swift; sourceTree = "<group>"; };
+		8414FEAF1A0C666B00398192 /* TFQChooseViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFQChooseViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		844B62161A135A5B0055633B /* ChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseView.h; sourceTree = "<group>"; };
+		844B62171A135A5B0055633B /* ChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseView.m; sourceTree = "<group>"; };
+		844B62181A135A5B0055633B /* ChooseViewGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseViewGroup.h; sourceTree = "<group>"; };
+		844B62191A135A5B0055633B /* ChooseViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseViewGroup.m; sourceTree = "<group>"; };
+		844B621A1A135A5B0055633B /* ChooseViewStyleClearDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseViewStyleClearDown.swift; sourceTree = "<group>"; };
+		844B621B1A135A5B0055633B /* ChooseViewStylePulldown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseViewStylePulldown.h; sourceTree = "<group>"; };
+		844B621C1A135A5B0055633B /* ChooseViewStylePulldown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseViewStylePulldown.m; sourceTree = "<group>"; };
+		844B621D1A135A5B0055633B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		844B621F1A135A5B0055633B /* LocationChooseViewGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationChooseViewGroup.h; sourceTree = "<group>"; };
+		844B62201A135A5B0055633B /* LocationChooseViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationChooseViewGroup.m; sourceTree = "<group>"; };
+		844B62211A135A5B0055633B /* locations */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = locations; sourceTree = "<group>"; };
+		844B62231A135A5B0055633B /* SubjectChooseViewGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectChooseViewGroup.h; sourceTree = "<group>"; };
+		844B62241A135A5B0055633B /* SubjectChooseViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectChooseViewGroup.m; sourceTree = "<group>"; };
+		844B62251A135A5B0055633B /* subjects */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = subjects; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8414FE5D1A0C614700398192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8414FE721A0C614700398192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8414FE571A0C614700398192 = {
+			isa = PBXGroup;
+			children = (
+				8414FE621A0C614700398192 /* TFQChooseViewDemo */,
+				8414FE781A0C614700398192 /* TFQChooseViewDemoTests */,
+				8414FE611A0C614700398192 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8414FE611A0C614700398192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8414FE601A0C614700398192 /* TFQChooseViewDemo.app */,
+				8414FE751A0C614700398192 /* TFQChooseViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8414FE621A0C614700398192 /* TFQChooseViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				844B62151A135A5B0055633B /* chooseView */,
+				8414FE651A0C614700398192 /* AppDelegate.swift */,
+				8414FE671A0C614700398192 /* ViewController.swift */,
+				8414FE691A0C614700398192 /* Main.storyboard */,
+				8414FE6C1A0C614700398192 /* Images.xcassets */,
+				8414FE6E1A0C614700398192 /* LaunchScreen.xib */,
+				8414FE631A0C614700398192 /* Supporting Files */,
+			);
+			path = TFQChooseViewDemo;
+			sourceTree = "<group>";
+		};
+		8414FE631A0C614700398192 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8414FE641A0C614700398192 /* Info.plist */,
+				8414FEAF1A0C666B00398192 /* TFQChooseViewDemo-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8414FE781A0C614700398192 /* TFQChooseViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8414FE7B1A0C614700398192 /* TFQChooseViewDemoTests.swift */,
+				8414FE791A0C614700398192 /* Supporting Files */,
+			);
+			path = TFQChooseViewDemoTests;
+			sourceTree = "<group>";
+		};
+		8414FE791A0C614700398192 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8414FE7A1A0C614700398192 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844B62151A135A5B0055633B /* chooseView */ = {
+			isa = PBXGroup;
+			children = (
+				844B62161A135A5B0055633B /* ChooseView.h */,
+				844B62171A135A5B0055633B /* ChooseView.m */,
+				844B62181A135A5B0055633B /* ChooseViewGroup.h */,
+				844B62191A135A5B0055633B /* ChooseViewGroup.m */,
+				844B621A1A135A5B0055633B /* ChooseViewStyleClearDown.swift */,
+				844B621B1A135A5B0055633B /* ChooseViewStylePulldown.h */,
+				844B621C1A135A5B0055633B /* ChooseViewStylePulldown.m */,
+				844B621D1A135A5B0055633B /* Images.xcassets */,
+				844B621E1A135A5B0055633B /* locationChooseViewGroup */,
+				844B62221A135A5B0055633B /* subjectChooseViewGroup */,
+			);
+			name = chooseView;
+			path = ChooseView;
+			sourceTree = "<group>";
+		};
+		844B621E1A135A5B0055633B /* locationChooseViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				844B621F1A135A5B0055633B /* LocationChooseViewGroup.h */,
+				844B62201A135A5B0055633B /* LocationChooseViewGroup.m */,
+				844B62211A135A5B0055633B /* locations */,
+			);
+			path = locationChooseViewGroup;
+			sourceTree = "<group>";
+		};
+		844B62221A135A5B0055633B /* subjectChooseViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				844B62231A135A5B0055633B /* SubjectChooseViewGroup.h */,
+				844B62241A135A5B0055633B /* SubjectChooseViewGroup.m */,
+				844B62251A135A5B0055633B /* subjects */,
+			);
+			path = subjectChooseViewGroup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8414FE5F1A0C614700398192 /* TFQChooseViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8414FE7F1A0C614700398192 /* Build configuration list for PBXNativeTarget "TFQChooseViewDemo" */;
+			buildPhases = (
+				8414FE5C1A0C614700398192 /* Sources */,
+				8414FE5D1A0C614700398192 /* Frameworks */,
+				8414FE5E1A0C614700398192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFQChooseViewDemo;
+			productName = TFQChooseViewDemo;
+			productReference = 8414FE601A0C614700398192 /* TFQChooseViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8414FE741A0C614700398192 /* TFQChooseViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8414FE821A0C614700398192 /* Build configuration list for PBXNativeTarget "TFQChooseViewDemoTests" */;
+			buildPhases = (
+				8414FE711A0C614700398192 /* Sources */,
+				8414FE721A0C614700398192 /* Frameworks */,
+				8414FE731A0C614700398192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8414FE771A0C614700398192 /* PBXTargetDependency */,
+			);
+			name = TFQChooseViewDemoTests;
+			productName = TFQChooseViewDemoTests;
+			productReference = 8414FE751A0C614700398192 /* TFQChooseViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8414FE581A0C614700398192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = TFQ;
+				TargetAttributes = {
+					8414FE5F1A0C614700398192 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					8414FE741A0C614700398192 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 8414FE5F1A0C614700398192;
+					};
+				};
+			};
+			buildConfigurationList = 8414FE5B1A0C614700398192 /* Build configuration list for PBXProject "TFQChooseViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8414FE571A0C614700398192;
+			productRefGroup = 8414FE611A0C614700398192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8414FE5F1A0C614700398192 /* TFQChooseViewDemo */,
+				8414FE741A0C614700398192 /* TFQChooseViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8414FE5E1A0C614700398192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8414FE6B1A0C614700398192 /* Main.storyboard in Resources */,
+				844B622E1A135A5B0055633B /* subjects in Resources */,
+				844B622A1A135A5B0055633B /* Images.xcassets in Resources */,
+				8414FE701A0C614700398192 /* LaunchScreen.xib in Resources */,
+				8414FE6D1A0C614700398192 /* Images.xcassets in Resources */,
+				844B622C1A135A5B0055633B /* locations in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8414FE731A0C614700398192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8414FE5C1A0C614700398192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844B62281A135A5B0055633B /* ChooseViewStyleClearDown.swift in Sources */,
+				8414FE681A0C614700398192 /* ViewController.swift in Sources */,
+				844B62291A135A5B0055633B /* ChooseViewStylePulldown.m in Sources */,
+				844B62271A135A5B0055633B /* ChooseViewGroup.m in Sources */,
+				844B622D1A135A5B0055633B /* SubjectChooseViewGroup.m in Sources */,
+				844B62261A135A5B0055633B /* ChooseView.m in Sources */,
+				844B622B1A135A5B0055633B /* LocationChooseViewGroup.m in Sources */,
+				8414FE661A0C614700398192 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8414FE711A0C614700398192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8414FE7C1A0C614700398192 /* TFQChooseViewDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8414FE771A0C614700398192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8414FE5F1A0C614700398192 /* TFQChooseViewDemo */;
+			targetProxy = 8414FE761A0C614700398192 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8414FE691A0C614700398192 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8414FE6A1A0C614700398192 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8414FE6E1A0C614700398192 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8414FE6F1A0C614700398192 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8414FE7D1A0C614700398192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8414FE7E1A0C614700398192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8414FE801A0C614700398192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TFQChooseViewDemo",
+				);
+				INFOPLIST_FILE = TFQChooseViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFQChooseViewDemo/TFQChooseViewDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8414FE811A0C614700398192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TFQChooseViewDemo",
+				);
+				INFOPLIST_FILE = TFQChooseViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFQChooseViewDemo/TFQChooseViewDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		8414FE831A0C614700398192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TFQChooseViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFQChooseViewDemo.app/TFQChooseViewDemo";
+			};
+			name = Debug;
+		};
+		8414FE841A0C614700398192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TFQChooseViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFQChooseViewDemo.app/TFQChooseViewDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8414FE5B1A0C614700398192 /* Build configuration list for PBXProject "TFQChooseViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8414FE7D1A0C614700398192 /* Debug */,
+				8414FE7E1A0C614700398192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8414FE7F1A0C614700398192 /* Build configuration list for PBXNativeTarget "TFQChooseViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8414FE801A0C614700398192 /* Debug */,
+				8414FE811A0C614700398192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8414FE821A0C614700398192 /* Build configuration list for PBXNativeTarget "TFQChooseViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8414FE831A0C614700398192 /* Debug */,
+				8414FE841A0C614700398192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8414FE581A0C614700398192 /* Project object */;
+}
