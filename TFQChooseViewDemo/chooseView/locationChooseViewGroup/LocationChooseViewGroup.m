@@ -66,7 +66,6 @@ static NSArray* __locations;
     if (index) {
         temp=[self chooseViewGroup:chooseViewGroup subDataWithIndex:index-1];
         int i=[chooseViewGroup valueIndexOfChooseViewIndex:index-1];
-        
         temp=[[self chooseViewGroup:chooseViewGroup subDataWithIndex:index-1]  objectAtIndex:i];
         temp= [temp objectForKey:[[temp keyEnumerator]nextObject]];
         

@@ -101,7 +101,18 @@
     CGPoint point=[touch locationInView:[self.pickerView superview]];
     return point.y<0;
 }
-
+-(id)pickerView{
+    if (!_pickerView){
+        if (self.pickerType==ChooseViewPickerTypeDatePicker)
+        {
+          _pickerView=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, [UIScreen mainScreen].bounds.size.width, 60)];
+        }else{
+             _pickerView= [[UIPickerView alloc] initWithFrame:CGRectMake(0, 44, [UIScreen mainScreen].bounds.size.width, 60)];
+        }
+    }
+    return  _pickerView;
+    
+}
 - (IBAction)pickerShow:(UIButton*)sender {
     if ([self.delegate respondsToSelector:@selector(chooseViewPickerWillShow:)])
     [self.delegate chooseViewPickerWillShow:self];
@@ -114,15 +125,11 @@
         }
         if (self.pickerType==ChooseViewPickerTypeDatePicker)
         {
-            if (!self.pickerView) {
-                self.pickerView=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, [UIScreen mainScreen].bounds.size.width, 60)];
-            }
+           
             
             [self.pickerView setDatePickerMode:UIDatePickerModeDate];
         }else{
-            if (!self.pickerView) {
-                self.pickerView= [[UIPickerView alloc] initWithFrame:CGRectMake(0, 44, [UIScreen mainScreen].bounds.size.width, 60)];
-            }
+
             [self.pickerView setShowsSelectionIndicator : YES];
             
             [self.pickerView setValue:self forKey:@"dataSource"];

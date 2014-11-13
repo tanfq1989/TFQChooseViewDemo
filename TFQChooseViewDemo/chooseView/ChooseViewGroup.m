@@ -16,6 +16,7 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
+        self.required=YES;
     }
     return self;
 }
@@ -23,7 +24,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        self.required=YES;
     }
     return self;
 }
@@ -43,6 +44,7 @@
             chooseView.tag=tagWithIndex(i);
             chooseView.datasource=self;
             chooseView.delegate=self;
+            chooseView.value=[self chooseView:chooseView titleForRow:0 forComponent:0];
             [self addSubview:chooseView];
         }
         if ([self.datasource respondsToSelector:@selector(chooseViewGroup:titleOfChooseViewAtIndex:)])
@@ -59,19 +61,22 @@
     return 1;
 }
 -(NSInteger)chooseView:(ChooseView *)chooseView numberOfRowsInComponent:(NSInteger)componen{
-    return [self.datasource chooseViewGroup:self numberOfChooseViewAtIndex:indexOfChooseView(chooseView)] ;
+    return [self.datasource chooseViewGroup:self numberOfChooseViewAtIndex:indexOfChooseView(chooseView)] +!self.isRequired ;
 }
 -(NSString *)chooseView:(ChooseView *)chooseView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [self.datasource chooseViewGroup:self valueOfIndex:row atChooseViewOfIndex:indexOfChooseView(chooseView)];
+    if (!self.isRequired&&row==0) {
+        return @"请选择";
+    }else
+    return [self.datasource chooseViewGroup:self valueOfIndex:row-!self.isRequired atChooseViewOfIndex:indexOfChooseView(chooseView)];
 }
 -(NSInteger)valueIndexOfChooseViewIndex:(NSInteger)index{
     ChooseView * chooseView=(ChooseView *)[self viewWithTag:tagWithIndex(index)];
-    return [chooseView selectedRowInComponent:0];
+    return [chooseView selectedRowInComponent:0] - !self.isRequired;
 }
 -(void)chooseViewSureButtonClicked:(ChooseView *)chooseView{
     ChooseView*temp = (id)[self viewWithTag:chooseView.tag-1];
     if (temp){
-    temp.value = [self.datasource chooseViewGroup:self valueOfIndex:0 atChooseViewOfIndex:indexOfChooseView(temp)];
+        temp.value = [self chooseView:temp titleForRow:0 forComponent:0];
         [self chooseViewSureButtonClicked:temp];
     }else{
         

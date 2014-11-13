@@ -29,6 +29,7 @@
 @interface ChooseViewGroup : UIView<ChooseViewDatasource,ChooseViewDelegate>
 @property (nonatomic,weak)id<ChooseViewGroupDelegate> delegate;
 @property (nonatomic,weak)id<ChooseViewGroupDatasource> datasource;
+@property (nonatomic,assign,getter=isRequired)BOOL required;
 -(NSInteger) valueIndexOfChooseViewIndex:(NSInteger)index;
 -(NSString*) valueOfChooseViewIndex:(NSInteger)index;
 @end
