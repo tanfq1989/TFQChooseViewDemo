@@ -16,7 +16,7 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.required=YES;
+        self.required=NO;
     }
     return self;
 }
@@ -24,7 +24,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.required=YES;
+        self.required=NO;
     }
     return self;
 }
